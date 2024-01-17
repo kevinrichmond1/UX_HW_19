@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX_HW_19</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img src="images/logo v3.png">
-      <ul>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
-      </ul>
+      <div class="header-content">
+        <div class="logo"><img src="images/logo v3.png"></div>
+        <div class="menu-icon">&#9776;</div>
+        <nav class="navbar">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="heroImg">
       <div class="content">
@@ -87,12 +94,118 @@
         <li>Contact</li>
       </ul>
     </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 
 </html>
 
 
 
-<!--Things to test and build, Hamburger menu
-for the top nav with an accordion.  A box model/modals for the skills
-and maybe some elements that fade-->
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Dropdown Menu</title>
+</head>
+<body>
+
+<header>
+    <div class="menu-btn">
+        <div class="menu-icon">&#9776;</div>
+    </div>
+    <ul class="menu-list">
+        <li class="menu-item">Home</li>
+        <li class="menu-item">About</li>
+        <li class="menu-item">Services</li>
+        <li class="menu-item">Contact</li>
+    </ul>
+</header>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</body>
+</html>
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            text-align: right;
+        }
+
+        .menu-btn {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .menu-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-item {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-btn {
+                display: block;
+            }
+
+            .menu-list {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 15px;
+                background-color: #333;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            .menu-list.show {
+                display: flex;
+            }
+
+            .menu-item {
+                margin: 0;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+    $(document).ready(function() {
+        $('.menu-btn').click(function() {
+            $('.menu-list').toggleClass('show');
+        });
+    });
+
+-->
+
+
